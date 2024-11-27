@@ -36,12 +36,18 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
+  
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+
+
 </head>
 
 <body>
@@ -68,6 +74,20 @@
 
 
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <span class="is-justify-content-left">
+            <strong>IP-FVR</strong> is a face video restoration method that incorporates <strong>identity context</strong> from a
+            reference face image, enabling the model to refine the restoration process and achieve
+            <strong>high-quality, identity-preserving</strong> results.
+          </span>
         </div>
       </div>
     </div>
@@ -101,6 +121,30 @@
       </div>
     </div>
   </section>
+
+  <!-- Paper method -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3 has-text-centered">Method</h2>
+          <div class="item">
+            <img src="static/img/main.png" alt="MY ALT TEXT" />
+          </div>
+          <span class="is-justify-content-left">
+            The process of fine-tuning and inference in IP-FVR involves extracting multimodal features related to identity from
+            the reference face using a Face2Text encoder and a Vision encoder. These features are injected into the U-Net's
+            denoising process via a decoupled cross-attention mechanism, enabling the restoration of identity-consistent face
+            videos. After fine-tuning for each identity, we store the corresponding LoRA parameters, denoted as \( \psi_{id} \), which
+            can be plug-and-play in inference.
+          </span>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </section>
+
+
 
 </body>
 </html>
