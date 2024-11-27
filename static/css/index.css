@@ -133,5 +133,15 @@ body {
   font-size: smaller;
 }
 
+.item {
+    margin-bottom: 20px; /* Adds space between each item */
+  }
+
+.item img {
+  margin-bottom: 10px; /* Adds space between the image and its caption */
+  display: block; /* Ensures the image takes up the full width of its container */
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
