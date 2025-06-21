@@ -172,20 +172,7 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Face Video Restoration (FVR) aims to recover high-quality face videos from degraded versions. Traditional
-              methods struggle to preserve fine-grained, identity-specific features when degradation is severe, often
-              producing average-looking faces that lack individual characteristics. To address these challenges, we
-              introduce IP-FVR, a novel method that leverages a high-quality reference face image as a visual prompt to
-              provide identity conditioning during the denoising process. IP-FVR incorporates semantically rich identity
-              information from the reference image using decoupled cross-attention mechanisms, ensuring detailed and
-              identity consistent results. To combat identity drift over extended video sequences, we propose an
-              exponential blending strategy that combines latent codes from previous clips during each denoising
-              iteration. This approach maintains a stable and consistent identity representation, effectively reducing
-              frame-to-frame inconsistencies. Additionally, we enhance the restoration process with a multi-stream
-              negative prompt, guiding the model's attention to relevant facial attributes and minimizing the generation
-              of low-quality or incorrect features. Extensive experiments on both synthetic and real-world datasets
-              demonstrate that IP-FVR outperforms existing methods in both quality and identity preservation, showcasing
-              its substantial potential for practical applications in face video restoration.
+              Face Video Restoration (FVR) aims to recover high-quality face videos from degraded versions. Traditional methods struggle to preserve fine-grained, identity-specific features when degradation is severe, often producing average-looking faces that lack individual characteristics. To address these challenges, we introduce \textbf{IP-FVR}, a novel method that leverages a high-quality reference face image as a visual prompt to provide identity conditioning during the denoising process. \textbf{IP-FVR} incorporates semantically rich identity information from the reference image using decoupled cross-attention mechanisms, ensuring detailed and identity consistent results. For intra-clip identity drift (within 24 frames), we introduce an identity-preserving feedback learning method that combines cosine similarity-based reward signals with suffix-weighted temporal aggregation. This approach effectively minimizes drift within sequences of frames. For inter-clip identity drift, we develop an exponential blending strategy that aligns identities across clips by iteratively blending frames from previous clips during the denoising process. This method ensures consistent identity representation across different clips. Additionally, we enhance the restoration process with a multi-stream negative prompt, guiding the model's attention to relevant facial attributes and minimizing the generation of low-quality or incorrect features. Extensive experiments on both synthetic and real-world datasets demonstrate that IP-FVR outperforms existing methods in both quality and identity preservation, showcasing its substantial potential for practical applications in face video restoration.
             </p>
           </div>
         </div>
